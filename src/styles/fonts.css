@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 900;
+  font-display: swap;
+  src: url('../fonts/NotoSans/NotoSansKR-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 800;
+  font-display: swap;
+  src: url('../fonts/NotoSans/NotoSansKR-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/NotoSans/NotoSansKR-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/NotoSans/NotoSansKR-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  font-display: swap;
+  src: url('../fonts/NotoSans/NotoSansKR-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/NotoSans/NotoSansKR-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/NotoSans/NotoSansKR-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 200;
+  font-display: swap;
+  src: url('../fonts/NotoSans/NotoSansKR-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-weight: 100;
+  font-display: swap;
+  src: url('../fonts/NotoSans/NotoSansKR-Thin.ttf');
+}
