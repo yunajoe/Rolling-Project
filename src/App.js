@@ -1,10 +1,10 @@
 import { Outlet } from 'react-router';
-import Nav from './components/form/Nav/Nav';
+import Header from './components/Header/Header';
 
 const App = () => {
   return (
     <>
-      <Nav />
+      <Header />
       <Outlet />
     </>
   );
