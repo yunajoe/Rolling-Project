@@ -1,6 +1,6 @@
 import React from "react";
-import style from "./CardImage.module.css";
-export const CardImage = ({ profileImageURL }) => {
+import style from "./CardProfileImage.module.css";
+export const CardProfileImage = ({ profileImageURL }) => {
   return (
     <img
       className={style.profile__image}
