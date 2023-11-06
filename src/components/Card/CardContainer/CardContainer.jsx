@@ -6,6 +6,7 @@ export const CardContainer = () => {
   return (
     <div>
       {data?.map((item, index) => {
+        // index?
         return <CardBody key={index} item={item} />;
       })}
     </div>
