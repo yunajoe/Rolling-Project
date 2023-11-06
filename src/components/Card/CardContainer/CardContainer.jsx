@@ -3,7 +3,6 @@ import { useGetMessage } from "../../../data-access/useGetMessage";
 import CardBody from "./CardBody";
 export const CardContainer = () => {
   const { data } = useGetMessage();
-  console.log(data);
   return (
     <div>
       {data?.map((item) => {
