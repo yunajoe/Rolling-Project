@@ -3,9 +3,9 @@ import style from "./CardProfile.module.css";
 
 export const CardProfile = ({ sender, relationship }) => {
   return (
-    <div>
+    <div className={style.container}>
       <p className={style.profile__name}>FROM. {sender}</p>
-      <p className={style.profile__relationship}>{relationship}</p>
+      <span className={style.profile__relationship}>{relationship}</span>
     </div>
   );
 };
