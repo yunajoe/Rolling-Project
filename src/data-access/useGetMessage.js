@@ -4,7 +4,7 @@
 import requestAPI from "../apis/api";
 import { mapProfileData } from "../utils/mapProfileData";
 import { useAsync } from "../utils/useAsync";
-import { team, id, API_ENDPOINTS } from "../apis/config";
+import { TEAM, ID, API_ENDPOINTS } from "../apis/config";
 const url = API_ENDPOINTS.recipients.getRecipientMessages;
 
 const getData = async () => {
