@@ -5,7 +5,7 @@ import plusbutton from "../../../assets/images/plusbutton.svg";
 export const CardButtonImage = () => {
   return (
     <div className={style.container}>
-      <img src={plusbutton} alt="plus-button" />;
+      <img src={plusbutton} alt="plus-button" />
     </div>
   );
 };

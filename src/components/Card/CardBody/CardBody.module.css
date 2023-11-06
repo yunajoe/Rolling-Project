@@ -6,3 +6,7 @@
 .divider {
   border: 1px solid var(--gray-200);
 }
+
+.bin {
+  margin-left: 10rem;
+}
