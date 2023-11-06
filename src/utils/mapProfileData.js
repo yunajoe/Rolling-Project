@@ -1,8 +1,10 @@
 export const mapProfileData = (person) => {
   if (!person) return {};
 
-  const { profileImageURL, sender, relationship, content, createdAt } = person;
+  const { id, profileImageURL, sender, relationship, content, createdAt } =
+    person;
   return {
+    id,
     profileImageURL,
     sender,
     relationship,
