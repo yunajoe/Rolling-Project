@@ -1,0 +1,8 @@
+.header {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.divider {
+  border: 1px solid var(--gray-200);
+}
