@@ -4,17 +4,13 @@
 import requestAPI from "../apis/api";
 import { mapProfileData } from "../utils/mapProfileData";
 import { useAsync } from "../utils/useAsync";
+import { team, id, API_ENDPOINTS } from "../apis/config";
+const url = API_ENDPOINTS.recipients.getRecipientMessages;
 
 const getData = async () => {
-  const option = "1-6/recipients/";
-  const recipientId = "1/";
-  const message = "messages/";
-  const { response, result } = await requestAPI(
-    `${option}${recipientId}${message}`,
-    {
-      method: "GET",
-    },
-  );
+  const { response, result } = await requestAPI(url, {
+    method: "GET",
+  });
   return { response, result };
 };
 
