@@ -1,5 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-npm lint-staged
-npm run postcssnpx lint-staged
+npx lint-staged
