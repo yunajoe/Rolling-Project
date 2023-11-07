@@ -20,13 +20,17 @@
     "lint": "eslint src/**/*.js",
     "prepare": "husky install",
     "prettier": "prettier --write src/**/*js",
-    "postcss" : "postcss --replace src/**/*css"
+    "postcss": "postcss --replace src/**/*css"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   },
   "browserslist": {
     "production": [
@@ -47,6 +51,7 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
+    "lint-staged": "^15.0.2",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
     "postcss-sorting": "^8.0.2",
