@@ -32,7 +32,7 @@
   "lint-staged": {
     "*.js": "eslint --cache --fix",
     "*.{js,css,md}": "prettier --write",
-    "*.{css}" : "postcss --replace"
+    "*.css" : "postcss --replace"
   },
   "browserslist": {
     "production": [
