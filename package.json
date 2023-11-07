@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "lint-staged": "^15.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.18.0",
@@ -30,7 +31,7 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
-    "*.{js}": "prettier --write",
+    "*.{js,css,md}": "prettier --write",
     "*.{css}" : "postcss --replace"
   },
   "browserslist": {
@@ -52,7 +53,6 @@
     "eslint-plugin-import": "^2.29.0",
     "eslint-plugin-react": "^7.33.2",
     "husky": "^8.0.3",
-    "lint-staged": "^15.0.2",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
     "postcss-sorting": "^8.0.2",
