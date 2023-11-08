@@ -14,9 +14,8 @@
 >프로젝트 이름: 롤링<br>
 프로젝트 지속기간: 2023.11.03-2023.11.18<br>
 배포 주소: <br>
-멤버: [손지은](https://github.com/wise-Ag), [이규호](https://github.com/leegyuho-programer), [이정윤](https://github.com/lsc58461), [정진호](https://github.com/ayden94), [조연아](https://github.com/yunajoe)
-
->
+멤버: [손지은](https://github.com/wise-Ag), [이규호](https://github.com/leegyuho-programer), [이정윤](https://github.com/lsc58461), [정진호](https://github.com/ayden94), [조연아](https://github.com/yunajoe)<br>
+Prettier, ESLint, Husky: https://thrilling-taste-dd3.notion.site/lint-prettier-postCSS-husky-0d5929422c694d77815b638150507f9b
 
 ## 설명
 프로젝트명
