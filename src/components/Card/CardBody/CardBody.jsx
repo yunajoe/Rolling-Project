@@ -1,8 +1,8 @@
-import { Card } from "../Card";
-import { CardProfileImage } from "../CardImage/CardProfileImage";
-import { CardProfile } from "../CardProfile/CardProfile";
-import { CardContent } from "../CardContent/CardContent";
-import { CardDate } from "../CardDate/CardDate";
+import Card from "../Card";
+import CardProfileImage from "../CardImage/CardProfileImage";
+import CardProfile from "../CardProfile/CardProfile";
+import CardContent from "../CardContent/CardContent";
+import CardDate from "../CardDate/CardDate";
 import style from "./CardBody.module.css";
 import bin from "../../../assets/images/bin.svg";
 import { useParams } from "react-router-dom";

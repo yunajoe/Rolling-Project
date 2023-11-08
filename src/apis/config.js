@@ -1,13 +1,30 @@
 const TEAM = "1-6";
-const ID = 1;
-
+const id = 1;
 export const API_ENDPOINTS = {
-  backgroundImages: "/background-images/",
-  profileImages: "/profile-images/",
+  baseUrl: "https://rolling-api.vercel.app",
+  backgroundImages: {
+    getBackgroundImages: "/background-images/",
+  },
+  profileImages: {
+    getProfileImages: "/profile-images/",
+  },
+  messages: {
+    deleteMessage: `/${TEAM}/messages/${id}/messages_delete/`,
+  },
   recipients: {
-    getRecipient: `/${TEAM}/recipients/${ID}/`,
     getRecipients: `/${TEAM}/recipients/`,
-    getRecipientMessages: `/${TEAM}/recipients/${ID}/messages/`,
-    getRecipientReactions: `/${TEAM}/recipients/${ID}/reactions/`,
+    createRecipient: `/${TEAM}/recipients/`,
+    getRecipient: (id) => `/${TEAM}/recipients/${id}/`,
+    deleteRecipient: (id) => `/${TEAM}/recipients/${id}/`,
+    listRecipientMessages: (recipientId) =>
+      `/${TEAM}/recipients/${recipientId}/messages/`,
+    createRecipientMessage: (recipientId) =>
+      `/${TEAM}/recipients/${recipientId}/messages/`,
+    getRecipientReactions: (recipientId) =>
+      `/${TEAM}/recipients/${recipientId}/reactions/`,
+    postRecipientReaction: (recipientId) =>
+      `/${TEAM}/recipients/${recipientId}/reactions/`,
   },
 };
+
+export default API_ENDPOINTS;

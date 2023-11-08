@@ -1,7 +1,7 @@
 import { useGetMessage } from "../../../data-access/useGetMessage";
-import { CardBody } from "../CardBody/CardBody";
-import { Card } from "../Card";
-import { CardButtonImage } from "../CardImage/CardButtonImage";
+import CardBody from "../CardBody/CardBody";
+import Card from "../Card";
+import CardButtonImage from "../CardImage/CardButtonImage";
 
 const CardContainer = () => {
   const { data } = useGetMessage();
