@@ -1,6 +1,6 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import App from './App';
-import Index from './pages/Index';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import App from "./App";
+import Index from "./pages/Index";
 
 const Main = () => {
   return (

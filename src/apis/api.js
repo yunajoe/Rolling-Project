@@ -1,4 +1,4 @@
-const APIpoint = 'https://rolling-api.vercel.app/';
+const APIpoint = "https://rolling-api.vercel.app/";
 
 async function requestAPI(url, option) {
   const response = await fetch(`${APIpoint}${url}`, option);
