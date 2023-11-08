@@ -1,11 +1,9 @@
-import React from "react";
 import { useGetMessage } from "../../../data-access/useGetMessage";
 import { CardBody } from "../CardBody/CardBody";
 import { Card } from "../Card";
 import { CardButtonImage } from "../CardImage/CardButtonImage";
-import { useParams } from "react-router-dom";
-export const CardContainer = () => {
-  // const { id } = useParams();
+
+const CardContainer = () => {
   const { data } = useGetMessage();
 
   return (
@@ -19,3 +17,5 @@ export const CardContainer = () => {
     </div>
   );
 };
+
+export default CardContainer;

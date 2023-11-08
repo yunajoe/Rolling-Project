@@ -1,6 +1,6 @@
-import React from "react";
 import style from "./CardProfileImage.module.css";
-export const CardProfileImage = ({ profileImageURL }) => {
+
+const CardProfileImage = ({ profileImageURL }) => {
   return (
     <img
       className={style.profile__image}
@@ -9,3 +9,5 @@ export const CardProfileImage = ({ profileImageURL }) => {
     />
   );
 };
+
+export default CardProfileImage;

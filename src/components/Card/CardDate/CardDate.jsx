@@ -1,8 +1,8 @@
-import React from "react";
-import { ConvertDateFormat } from "../../../utils/mapProfileData";
 import style from "./CardDate.module.css";
-export const CardDate = ({ createdAt }) => {
-  const convertedDate = ConvertDateFormat(createdAt);
+import { convertDateFormat } from "../../../utils/convertDateFormat";
+
+const CardDate = ({ createdAt }) => {
+  const convertedDate = convertDateFormat(createdAt);
   const { year, month, day } = convertedDate;
   return (
     <div className={style.container}>
@@ -10,3 +10,5 @@ export const CardDate = ({ createdAt }) => {
     </div>
   );
 };
+
+export default CardDate;

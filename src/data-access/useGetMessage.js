@@ -3,8 +3,8 @@
 
 import requestAPI from "../apis/api";
 import { mapProfileData } from "../utils/mapProfileData";
-import { useAsync } from "../utils/useAsync";
-import { TEAM, ID, API_ENDPOINTS } from "../apis/config";
+import { useAsync } from "../hooks/useAsync";
+import { API_ENDPOINTS } from "../apis/config";
 const url = API_ENDPOINTS.recipients.getRecipientMessages;
 
 const getData = async () => {
@@ -16,7 +16,7 @@ const getData = async () => {
 
 // data =>  {count: 5, next: null, previous: null, results: Array(5)}
 export const useGetMessage = () => {
-  const { loading, error, data } = useAsync(getData);
+  const { data } = useAsync(getData);
   const dataArr = data?.results;
   const res = dataArr?.map(mapProfileData);
   return {

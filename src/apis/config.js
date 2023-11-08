@@ -1,5 +1,5 @@
-export const TEAM = "1-6";
-export let ID = 1;
+const TEAM = "1-6";
+const ID = 1;
 
 export const API_ENDPOINTS = {
   backgroundImages: "/background-images/",
