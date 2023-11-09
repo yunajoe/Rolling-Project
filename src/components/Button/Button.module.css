@@ -1,9 +1,15 @@
+.button {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
 /* shape props */
 .plus {
   width: 5.6rem;
   height: 5.6rem;
   background-color: var(--gray-500);
-  background-image: url('../../assets/images/icons/plusIcon.svg');
+  background-image: url("../../assets/images/icons/plusIcon.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 2.4rem;
@@ -51,11 +57,11 @@
 
 /*  direction props */
 .leftArrow {
-  background-image: url('../../assets/images/arrowLeftIcon.svg');
+  background-image: url("../../assets/images/icons/arrowLeftIcon.svg");
 }
 
 .rightArrow {
-  background-image: url('../../assets/images/arrowRightIcon.svg');
+  background-image: url("../../assets/images/icons/arrowRightIcon.svg");
 }
 
 .primary {
@@ -143,13 +149,13 @@
 }
 
 .outlined.size56 {
+  padding: 1.4rem 1.6rem;
   height: 5.6rem;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.8rem;
   letter-spacing: -0.01.8rem;
   border-radius: 1.2rem;
-  padding: 1.4rem 1.6rem;
 }
 
 .outlined.size40,
@@ -160,24 +166,24 @@
 }
 
 .outlined.size40 {
+  padding: 0.8rem 1.6rem;
   height: 4rem;
   line-height: 2.6rem;
   letter-spacing: -0.016rem;
-  padding: 0.8rem 1.6rem;
 }
 
 .outlined.size36 {
+  padding: 0.6rem 1.6rem;
   height: 3.6rem;
   font-weight: 500;
   line-height: 2.4rem;
   letter-spacing: -0.012rem;
-  padding: 0.6rem 1.6rem;
 }
 
 .outlined.size28 {
-  font-size: 1.4rem;
-  height: 2.4rem;
   padding: 0.2rem 1.6rem;
+  height: 2.4rem;
+  font-size: 1.4rem;
 }
 
 .outlined:disabled {
@@ -199,8 +205,8 @@
 }
 
 .outlined.sizeicon {
+  padding: 0.5rem;
   width: 3.6rem;
   height: 3.6rem;
-  padding: 0.5rem;
   border-radius: 0.6rem;
 }
