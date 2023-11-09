@@ -2,18 +2,22 @@ html {
   font-size: 62.5%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 button,
 input,
 h1,
 h2 {
-  /* letter-spacing, line-height, font-size는 필요할 때마다 선언,
-      font-weight는 normal 아닐 때만 선언, */
-  color: var(--Black, #000000);
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
+  /* letter-spacing, line-height, font-size는 필요할 때마다 선언,
+      font-weight는 normal 아닐 때만 선언, */
+  color: var(--Black, #000000);
   word-break: keep-all;
 }
 
