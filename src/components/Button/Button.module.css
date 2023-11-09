@@ -1,3 +1,9 @@
+.button {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
 /* shape props */
 .plus {
   width: 5.6rem;
@@ -51,11 +57,11 @@
 
 /*  direction props */
 .leftArrow {
-  background-image: url("../../assets/images/arrowLeftIcon.svg");
+  background-image: url("../../assets/images/icons/arrowLeftIcon.svg");
 }
 
 .rightArrow {
-  background-image: url("../../assets/images/arrowRightIcon.svg");
+  background-image: url("../../assets/images/icons/arrowRightIcon.svg");
 }
 
 .primary {
