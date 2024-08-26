@@ -1,0 +1,58 @@
+/* PC 화면 크기 (1200px 이상) */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.card {
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.name {
+  overflow: hidden;
+  max-width: 48rem;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 4.2rem; /* 150% */
+  color: var(--gray-800, #2b2b2b);
+  letter-spacing: -0.028rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.name.card {
+  overflow: hidden;
+  max-width: 25rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.name.white {
+  color: var(--white, #fff);
+}
+
+/* Tablet 화면 크기 (1199px 이하) */
+@media screen and (max-width: 1199px) {
+  .name {
+    max-width: 33rem;
+  }
+}
+
+/* Mobile 화면 크기 (767px 이하) */
+@media screen and (max-width: 767px) {
+  .name {
+    font-size: 1.8rem;
+    line-height: 2.8rem; /* 155.556% */
+    letter-spacing: -0.018rem;
+  }
+
+  .name.card {
+    max-width: 19rem;
+  }
+}

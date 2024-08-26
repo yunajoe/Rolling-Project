@@ -1,18 +1,12 @@
 .container {
-  margin-left: 1rem;
   display: flex;
   flex-direction: column;
+  margin-left: 1rem;
   row-gap: 1rem;
 }
 
 .profile__name {
-  color: var(--Black);
-  font-weight: 700;
   font-size: 1.5rem;
-}
-
-.profile__relationship {
-  background-color: var(--purple-100);
-  color: var(--purple-700);
-  width: 20px;
+  font-weight: 700;
+  color: var(--Black);
 }

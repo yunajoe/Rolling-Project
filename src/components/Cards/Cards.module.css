@@ -1,0 +1,22 @@
+.root {
+  display: grid;
+  justify-content: center;
+  width: 120rem;
+  grid-template: auto / repeat(3, 38.4rem);
+  column-gap: 2.4rem;
+  row-gap: 2.5rem;
+
+  @media (max-width: 1248px) {
+    width: 100%;
+    grid-template: auto/repeat(3, minmax(auto, 38.4rem));
+  }
+
+  @media (max-width: 1199px) {
+    width: 100%;
+    grid-template: auto/repeat(2, minmax(auto, 38.4rem));
+    column-gap: 1.6rem;
+  }
+  @media (max-width: 767px) {
+    grid-template: auto/repeat(1, 32rem);
+  }
+}

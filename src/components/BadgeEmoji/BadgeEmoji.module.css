@@ -1,0 +1,21 @@
+.badgeEmoji {
+  padding: 0.8rem 1.2rem;
+  background: rgba(0, 0, 0, 0.54);
+  font-size: 1.6rem;
+  line-height: 2rem; /* 125% */
+  color: #fff;
+  text-wrap: nowrap;
+  border-radius: 3.2rem;
+}
+
+/* Tablet 화면 크기 (1199px 이하) */
+@media screen and (max-width: 1199px) {
+}
+
+/* Mobile 화면 크기 (767px 이하) */
+@media screen and (max-width: 767px) {
+  .badgeEmoji {
+    padding: 0.4rem 0.8rem;
+    font-size: 1.2rem;
+  }
+}

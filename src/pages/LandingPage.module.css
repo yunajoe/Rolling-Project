@@ -1,0 +1,167 @@
+.title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  color: var(--gray-900);
+  /* mobile */
+  @media (max-width: 767px) {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+}
+
+.description {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: var(--gray-500);
+  letter-spacing: 0.05rem;
+  /* mobile */
+  @media (max-width: 767px) {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+}
+.container {
+  /* pc */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 6rem 0 15rem;
+  width: 100%;
+  row-gap: 5rem;
+
+  /* tablet */
+  @media (max-width: 1199px) {
+    gap: 3rem;
+    padding: 5rem 2.4rem 2.4rem 2.4rem;
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
+
+  /* mobile */
+  @media (max-width: 767px) {
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
+}
+
+.box1 {
+  display: grid;
+  gap: 15.2rem;
+  padding: 6rem 0 6rem 6rem;
+  overflow: hidden;
+  background-color: var(--Surface);
+  grid-template-areas: "box-1-frame box-1-image ";
+  border-radius: 1.6rem;
+
+  /* tablet */
+  @media (max-width: 1199px) {
+    justify-content: center;
+    padding: 4rem 0 4rem 0;
+    width: 100%;
+    row-gap: 3rem;
+    grid-template-areas:
+      "box-1-frame"
+      "box-1-image";
+  }
+  /* mobile */
+  @media (max-width: 767px) {
+    padding: 2.4rem;
+  }
+}
+
+.frameImage1 {
+  width: 72rem;
+  height: 20.4rem;
+  background-image: url("../assets/images//etc/frame.png");
+  background-size: cover;
+  grid-area: box-1-image;
+}
+.frameImage2 {
+  width: 72rem;
+  height: 20.4rem;
+  background-image: url("../assets/images//etc/frame2.png");
+  background-size: cover;
+  grid-area: box-2-image;
+  @media (max-width: 767px) {
+    width: 32rem;
+    height: 11.3rem;
+  }
+}
+.box1 .frame {
+  grid-area: box-1-frame;
+  @media (max-width: 1199px) {
+    padding-left: 4rem;
+  }
+  @media (max-width: 767px) {
+    margin: 0 auto;
+    padding: 0;
+    width: 32rem;
+  }
+}
+
+/* box2영역 */
+.box2 {
+  display: grid;
+  padding: 6rem 19.2rem 6rem 0;
+  background-color: var(--Surface);
+  border-radius: 1.6rem;
+  grid-template-areas: "box-2-image box-2-frame";
+
+  /* tablet */
+  @media (max-width: 1199px) {
+    justify-content: center;
+    padding: 4rem 0;
+    width: 100%;
+    row-gap: 3rem;
+    grid-template-areas:
+      "box-2-frame"
+      "box-2-image";
+  }
+  /* mobile */
+  @media (max-width: 767px) {
+    padding: 2.4rem;
+  }
+}
+
+.box2 .frame {
+  grid-area: box-2-frame;
+  @media (max-width: 1199px) {
+    padding-left: 4rem;
+  }
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+}
+
+.frame {
+  display: flex;
+  gap: 1.6rem;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.linebreak {
+  /* table */
+  @media (max-width: 1199px) {
+    display: none;
+  }
+  /* mobile */
+  @media (max-width: 767px) {
+    display: block;
+  }
+}
+
+.button {
+  /* table */
+  width: 28rem;
+  @media (max-width: 1199px) {
+    margin-top: 4rem;
+    width: 100%;
+  }
+  /* mobile */
+  @media (max-width: 767px) {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.root {
+  display: inline-flex; /*상위 displa:flex에도 크기가 늘어나지 않게 함*/
+  padding: 0 0.8rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  border-radius: 0.4rem;
+}
+.orange {
+  background: var(--orange-100, #fff0d6);
+  color: var(--orange-500, #ff8832);
+}
+.purple {
+  background: var(--purple-100, #f8f0ff);
+  color: var(--purple-500, #9935ff);
+}
+.green {
+  background: var(--green-100, #e4fbdc);
+  color: var(--green-500, #2ba600);
+}
+.blue {
+  background-color: var(--blue-100, #e2f5ff);
+  color: var(--blue-500, #00a2fe);
+}

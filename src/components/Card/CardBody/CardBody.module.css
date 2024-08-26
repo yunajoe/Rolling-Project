@@ -1,6 +1,10 @@
+.root {
+  cursor: pointer;
+}
 .header {
   display: flex;
   margin-bottom: 1.5rem;
+  position: relative;
 }
 
 .divider {
@@ -8,5 +12,7 @@
 }
 
 .bin {
-  margin-left: 10rem;
+  /* desktop */
+  position: absolute;
+  right: 1rem;
 }

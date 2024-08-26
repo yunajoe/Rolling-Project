@@ -12,8 +12,9 @@ button,
 input,
 h1,
 h2 {
-  font-family: 'Noto Sans';
+  font-family: "Noto Sans";
   font-style: normal;
+  font-weight: 400;
   font-weight: 400;
   /* letter-spacing, line-height, font-size는 필요할 때마다 선언,
       font-weight는 normal 아닐 때만 선언, */
@@ -32,10 +33,10 @@ h2 {
   --purple-800: #6e0ad1;
   --purple-900: #5603a7;
 
-  --orange-200: #fff0d6;
-  --orange-300: #ffe2ad;
-  --orange-400: #ffc583;
-  --orange-100: #ffae65;
+  --orange-100: #fff0d6;
+  --orange-200: #ffe2ad;
+  --orange-300: #ffc583;
+  --orange-400: #ffae65;
   --orange-500: #ff8832;
 
   --blue-100: #e2f5ff;

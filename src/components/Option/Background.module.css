@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  column-gap: 1.6rem;
+  row-gap: 1.6rem;
+  grid-template: auto/repeat(4, auto);
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+  @media screen and (max-width: 767px) {
+    grid-template: auto/repeat(2, auto);
+  }
+}
+
+.backgroundBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16.8rem;
+  height: 16.8rem;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  border-radius: 1.6rem;
+}
+
+.beige {
+  background-color: #ffe2ad;
+}
+
+.blue {
+  background-color: #b1e4ff;
+}
+
+.purple {
+  background-color: #ecd9ff;
+}
+
+.green {
+  background-color: #d0f5c3;
+}
+
+.icon {
+  padding: 1rem;
+  width: 4.4rem;
+  height: 4.4rem;
+  background-color: #555555;
+  border-radius: 50%;
+}

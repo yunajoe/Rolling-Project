@@ -1,0 +1,55 @@
+.cardListPage {
+  display: flex;
+  gap: 6.4rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+
+.listName {
+  /* Font/24 Bold */
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.6rem; /* 150% */
+  color: #000;
+  letter-spacing: -0.024rem;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 113.6rem;
+  height: 26rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #919191;
+}
+
+/* Tablet 화면 크기 (1199px 이하) */
+@media screen and (max-width: 1199px) {
+  .listName {
+    padding-left: 2.4rem;
+  }
+  .loading {
+    width: 100vw;
+  }
+}
+
+/* Mobile 화면 크기 (767px 이하) */
+@media screen and (max-width: 767px) {
+  .listName {
+    padding-left: 2rem;
+  }
+
+  .loading {
+    width: 100vw;
+    height: 23.2rem;
+  }
+}

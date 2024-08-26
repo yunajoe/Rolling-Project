@@ -1,0 +1,46 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 19px 30px;
+  position: fixed;
+  bottom: 65px;
+  left: 50%;
+  z-index: 1;
+  width: 524px;
+  height: 64px;
+  background: rgba(0, 0, 0, 0.8);
+  animation:
+    0.5s ease 0s popUp,
+    0.4s ease 4.7s popDown;
+  border-radius: 8px;
+  transform: translate(-50%, -50%);
+}
+
+.text {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 16px;
+  line-height: 26px;
+  color: white;
+}
+
+@keyframes popUp {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes popDown {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 0;
+  }
+}

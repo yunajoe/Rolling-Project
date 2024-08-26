@@ -1,0 +1,18 @@
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 5rem;
+  position: relative;
+}
+
+.img {
+  width: 60%;
+  height: 85vh;
+}
+
+.button {
+  position: absolute;
+  top: 88%;
+}

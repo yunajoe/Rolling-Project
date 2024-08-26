@@ -1,0 +1,89 @@
+.cardSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 1248px) {
+    padding-right: 2.4rem;
+    padding-left: 2.4rem;
+  }
+  @media (max-width: 767px) {
+    padding: 2.4rem 2rem;
+  }
+}
+
+.purple {
+  background-color: var(--purple-200);
+}
+
+.green {
+  background-color: var(--green-200);
+}
+
+.beige {
+  background-color: var(--orange-200);
+}
+
+.blue {
+  background-color: var(--blue-200);
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.6rem;
+  width: 100%;
+  max-width: 120rem;
+}
+
+.deleteButton {
+  z-index: 10;
+  width: 92px;
+  height: 39px;
+  background: #9935ff;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 26px;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -0.16px;
+  border-radius: 6px;
+  @media (max-width: 1248px) {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 91px;
+    position: fixed;
+    top: auto;
+    right: 24px;
+    bottom: 24px;
+    left: 24px;
+    width: auto;
+    border-radius: 12px;
+  }
+  @media (max-width: 767px) {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    position: fixed;
+    top: auto;
+    right: auto;
+    bottom: 24px;
+    left: auto;
+    left: 50%; /* 부모 요소를 기준으로 50% 위치에 배치 */
+    width: 320px;
+    border-radius: 12px;
+    transform: translateX(-50%); /* 수평 방향으로 -50% 이동하여 가운데 정렬 */
+  }
+}

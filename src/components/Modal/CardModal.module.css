@@ -1,0 +1,72 @@
+.root {
+  display: flex;
+  gap: 1.6rem;
+  flex-direction: column;
+  width: 100%;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid var(--gray-200, #eee);
+  width: 100%;
+}
+.profileContainer {
+  display: flex;
+  gap: 1.6rem;
+}
+.profile {
+  display: flex;
+  gap: 0.6rem;
+  flex-direction: column;
+}
+.sender {
+  font-size: 2rem;
+  font-weight: 400;
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+  }
+}
+.sender span {
+  font-weight: 600;
+}
+
+.header img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  @media (max-width: 767px) {
+    width: 5.6rem;
+    height: 5.6rem;
+  }
+}
+.createdAt {
+  font-size: 1.4rem;
+  color: var(--gray-400, #999);
+  @media (max-width: 767px) {
+    font-size: 1.2rem;
+  }
+}
+
+.content {
+  overflow: auto;
+  width: 50rem;
+  height: 24rem;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: #5a5a5a;
+
+  @media (max-width: 767px) {
+    width: 30rem;
+    height: 10rem;
+    font-size: 1.5rem;
+  }
+}
+.content::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: rgb(228, 225, 225); /* 스크롤바 막대 색상 */
+  border-radius: 12px 12px 12px 12px;
+}

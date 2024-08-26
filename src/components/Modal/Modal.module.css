@@ -1,0 +1,32 @@
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal {
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+  flex-direction: column;
+  padding: 3.2rem 4rem;
+  border: 0.1rem solid var(--stroke-light, #dee2e6);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background: var(--gray-white, #fff);
+  background-color: rgba(255, 255, 255, 1);
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 1.6rem;
+
+  @media (max-width: 767px) {
+    gap: 1.2rem;
+    padding: 1.8rem 2rem;
+    width: 34rem;
+    height: 28rem;
+  }
+}

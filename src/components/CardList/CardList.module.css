@@ -1,0 +1,61 @@
+.cardListContainer {
+  position: relative;
+}
+
+.cardListWrapper {
+  overflow: hidden;
+  position: relative;
+  width: 113.6rem;
+}
+
+.cardList {
+  display: flex;
+  gap: 1.2rem;
+
+  transition: transform 0.5s ease-in-out;
+}
+
+.previousButton,
+.nextButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.previousButton {
+  left: -2rem;
+}
+
+.nextButton {
+  right: -2rem;
+}
+
+/* Tablet 화면 크기 (1199px 이하) */
+@media screen and (max-width: 1199px) {
+  .cardListWrapper {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+  }
+
+  .previousButton,
+  .nextButton {
+    display: none;
+  }
+}
+
+/* Mobile 화면 크기 (767px 이하) */
+@media screen and (max-width: 767px) {
+  .cardListWrapper {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100vw;
+  }
+
+  .previousButton,
+  .nextButton {
+    display: none;
+  }
+}

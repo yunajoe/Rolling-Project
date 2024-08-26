@@ -1,7 +1,17 @@
 .container {
+  display: -webkit-box;
   flex-grow: 1;
   padding-top: 2rem;
   overflow: hidden;
-  color: var(--gray-800);
+  height: 10.6rem;
   font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: var(--gray-800);
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+
+  @media (max-width: 767px) {
+    -webkit-line-clamp: 3;
+  }
 }
